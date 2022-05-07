@@ -72,9 +72,7 @@ console.log(squares);
 let volume = [];
 
 for (let i = 0; i < squares.length; i++) {
-    volume.push(squares[i] * squares[i] * squares[i]);
+    volume.push(squares[i]**3);
     console.log("Het volume van " + squares[i] + " is " + volume[i]);
 }
-
-
 

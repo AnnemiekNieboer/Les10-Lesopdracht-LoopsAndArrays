@@ -15,8 +15,9 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 console.log(names);
 
 for (let i = 0; i < names.length; i++) {
-    console.log(names[i] + "je");
+    names[i] = names[i] + "je";
 }
+console.log(names)
 
 // ==========================================
 // Opdracht 2
@@ -67,12 +68,14 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 11 is 1331'
 // ]
 
+
 console.log(squares);
 
 let volume = [];
 
 for (let i = 0; i < squares.length; i++) {
     volume.push(squares[i]**3);
-    console.log("Het volume van " + squares[i] + " is " + volume[i]);
+    squares[i] = ("Het volume van " + squares[i] + " is " + volume[i]);
 }
 
+console.log(squares)
